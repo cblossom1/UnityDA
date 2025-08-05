@@ -15,10 +15,13 @@ public class TallerVariables : MonoBehaviour
     //Tiempo
     [SerializeField]
     private float _tiempo = 60f;
-
     //Puntos
     [SerializeField]
     private int _puntos = 20;
+
+    //IsAlive
+    [SerializeField]
+    private bool _isAlive = true;
 
     //Crear Variables de texto //Nota: asignamos la vatiable desde el inspector
 
@@ -35,9 +38,13 @@ public class TallerVariables : MonoBehaviour
     //TMP Puntos
     [SerializeField]
     private TMP_Text _puntosMensaje;
+    [SerializeField]
+    private TMP_Text _isAliveMensaje;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+
+
+// Start is called once before the first execution of Update after the MonoBehaviour is created
+void Start()
     {
         _nombreMensaje.text = "Nombre: " + _nombre;
         _vidaMensaje.text = "Vida: " + _vida;
@@ -46,12 +53,41 @@ public class TallerVariables : MonoBehaviour
 
 
 
-
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
+        //=
+        //==
+        //100 < 50
+        //50 > 500
+        //50 >= 500
+        //50 <= 500
+        //50 != 505
+        //!true
+
+        // (100 < 50) && (50 != 505)
+        // (50 != 505) || (100 < 50)
+
+        if (_isAlive == true)
+        {
+            _isAliveMensaje.text = "Vivito y colenado n_n";
+            if (_nombre == "Roberto")
+            {
+                _isAliveMensaje.text = "Roberto esta vivo";
+            }
+
+        }
+        else if(_nombre == "Roberto")
+        {
+            _isAliveMensaje.text = "Roberto esta muerto";
+        } 
+        else
+        {
+            _isAliveMensaje.text = "Ojitos cerrados";
+        }
+
     }
 }
