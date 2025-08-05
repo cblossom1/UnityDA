@@ -567,6 +567,58 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1393725656
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1393725658}
+  - component: {fileID: 1393725657}
+  m_Layer: 0
+  m_Name: TallerVariables
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1393725657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393725656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c64fb54798754d984936a01969e12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nombre: Laura
+  _vida: 100
+  _tiempo: 60
+  _puntos: 20
+  _nombreMensaje: {fileID: 192957386}
+  _vidaMensaje: {fileID: 2049257355}
+  _tiempoMensaje: {fileID: 1418079512}
+  _puntosMensaje: {fileID: 1649315019}
+--- !u!4 &1393725658
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393725656}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1418079510
 GameObject:
   m_ObjectHideFlags: 0
@@ -982,3 +1034,4 @@ SceneRoots:
   - {fileID: 630586005}
   - {fileID: 349126799}
   - {fileID: 1249265031}
+  - {fileID: 1393725658}
